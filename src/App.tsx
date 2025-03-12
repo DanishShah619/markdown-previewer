@@ -39,7 +39,7 @@ function App() {
       />
       <div
         id="preview"
-        dangerouslySetInnerHTML={{ __html: marked(text, { breaks: true }) }}
+        dangerouslySetInnerHTML={{ __html: marked.parse(text, { breaks: true }) as string }}
       />
     </div>
 
